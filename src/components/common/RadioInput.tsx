@@ -10,6 +10,7 @@ const RadioInput: React.FC<RadioInputProps> = ({ input, value, onChange }) => (
     <Input
       id={input.value}
       checked={input.value === value}
+      data-checked={input.value === value}
       value={input.value}
       type="radio"
       onChange={(e) => onChange(e.target.value)}
