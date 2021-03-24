@@ -55,7 +55,7 @@
     }
   },
   "lint-staged": {
-    "pages/**/*.{ts,tsx}": [
+    "src/**/*.{ts,tsx}": [
       "lint",
       "git add"
     ]
