@@ -3,25 +3,24 @@ import { useEffect, useState } from 'react';
 
 // Utils
 import API from './utils/api';
-
 // Components
 import Sort from './components/sort/Sort';
 import Select from './components/select/Select';
 import Filter from './components/filter/Filter';
 import FilterSection from './components/filter/FilterSection';
+import Footer from './components/common/Footer';
+import Alert from './components/common/Alert';
 // Common components
 import Header from './components/common/Header';
 import Main from './components/common/Main';
 import Repositories from './components/repositories/Repositories';
-
+// Providers
 import { FilterProvider } from './components/filter/FilterContext';
 import { SelectProvider } from './components/select/SelectContext';
 import { SortProvider } from './components/sort/SortContext';
 
 // Global styles
 import './App.css';
-import Footer from './components/common/Footer';
-import Alert from './components/common/Alert';
 
 const App: React.FC = () => {
   const [languages, setLanguages] = useState([]);

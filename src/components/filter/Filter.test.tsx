@@ -2,7 +2,6 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import Filter from './Filter';
 import { FilterProvider } from './FilterContext';
-import {Filters} from "./FilterInterfaces";
 
 const setup = () => {
   const utils = render(
