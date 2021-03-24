@@ -28,7 +28,6 @@ test('radio input renders with props', () => {
 
 
 
-
 test('radio input renders with checked attribute', () => {
   const { input } = setup();
   expect(input).toBeInTheDocument();
