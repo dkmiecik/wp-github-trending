@@ -22,7 +22,7 @@ const setup = () => {
   };
 };
 
-test('repositories element renders with props', () => {
+test('repositories element renders', () => {
   const { element } = setup();
   expect(element.length).toBe(1);
   expect(element[0]).toBeInTheDocument();

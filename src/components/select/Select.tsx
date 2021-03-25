@@ -16,11 +16,18 @@ const Select: React.FC<SelectProps> = ({ options }) => {
       {options && options.length ? (
         <Dropdown
           onChange={(e) => dispatch({ type: 'setLanguage', state: e.target.value })}
-          value={language}
+          defaultValue={language}
+          data-testid={'select'}
         >
-          <option value={'all'}>Select language</option>
+          <option value={'all'} data-selected={language === 'all'}>
+            Select language
+          </option>
           {options.map((option) => (
-            <option key={option.urlParam} value={option.urlParam}>
+            <option
+              key={option.urlParam}
+              value={option.urlParam}
+              data-selected={option.urlParam === language}
+            >
               {option.name}
             </option>
           ))}
